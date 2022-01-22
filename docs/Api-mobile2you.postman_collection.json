@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "b7752e4b-9c7f-4829-b7b6-7c29b242ca89",
+		"name": "Api-mobile2you",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/netflixes?page=&search=movie",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/netflixes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"netflixes"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "search",
+							"value": "",
+							"description": "Buscar por país, ano de laçamento e tipo",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/netflixes?page=&search=movie",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/netflixes?page=1&search=2020",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"netflixes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "search",
+									"value": "2020",
+									"description": "Buscar por ano de lançamento"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Per-Page",
+							"value": "15"
+						},
+						{
+							"key": "Total",
+							"value": "10"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ab636fa85e9aef809ddaf64708675049\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "64938c3d-eb38-4d30-b266-cc011461e9af"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.013569"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"1d9fae7c-2f78-4934-82de-0ab5a3d19bfd\",\n        \"show_id\": \"s108\",\n        \"type\": \"Movie\",\n        \"title\": \"37 Seconds\",\n        \"director\": \"Hikari\",\n        \"cast\": \"Mei Kayama, Misuzu Kanno, Shunsuke Daitoh, Makiko Watanabe, Yoshihiko Kumashino, Minori Hagiwara, Shohei Uno, Yuka Itaya, Kiyohiko Shibukawa, Eita Okuno, Haruka Imou, Toshinori Omi\",\n        \"country\": \"Japan\",\n        \"date_added\": \"January 31, 2020\",\n        \"release_year\": \"2020\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"116 min\",\n        \"listed_in\": \"Dramas, International Movies\",\n        \"description\": \"Trapped by society and familial obligations, a young manga artist goes on an unconventional journey for sexual freedom and personal liberation.\",\n        \"created_at\": \"2022-01-22T19:10:14.320Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.320Z\"\n    },\n    {\n        \"id\": \"264d9d36-0cae-433d-af09-75b3257e2946\",\n        \"show_id\": \"s7025\",\n        \"type\": \"Movie\",\n        \"title\": \"The Wrong Missy\",\n        \"director\": \"Tyler Spindel\",\n        \"cast\": \"David Spade, Lauren Lapkus, Nick Swardson, Geoff Pierson, Jackie Sandler, Sarah Chalke, Rob Schneider, Chris Witaske, Joe Anoa'i, Molly Sims\",\n        \"country\": \"United States\",\n        \"date_added\": \"May 13, 2020\",\n        \"release_year\": \"2020\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"90 min\",\n        \"listed_in\": \"Comedies, Romantic Movies\",\n        \"description\": \"Tim thinks he's invited the woman of his dreams on a work retreat to Hawaii, realizing too late he mistakenly texted someone from a nightmare blind date.\",\n        \"created_at\": \"2022-01-22T19:10:14.897Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.897Z\"\n    },\n    {\n        \"id\": \"272840df-78ab-4ffb-a8d3-c657f7abd410\",\n        \"show_id\": \"s210\",\n        \"type\": \"Movie\",\n        \"title\": \"A New York Christmas Wedding\",\n        \"director\": \"Otoja Abit\",\n        \"cast\": \"Nia Fairweather, Chris Noth, Cooper Koch, Tyra Ferrell, Denny Dillon, Adriana DeMeo, Otoja Abit, David Anzuelo, Camilla Harden, Natasha Goodman, Avery Whitted, Tony D. Head, Joe Perrino\",\n        \"country\": \"United States\",\n        \"date_added\": \"November 5, 2020\",\n        \"release_year\": \"2020\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"90 min\",\n        \"listed_in\": \"Dramas, LGBTQ Movies, Romantic Movies\",\n        \"description\": \"As her wedding nears, a bride-to-be is visited by an angel who reveals what could have been if she'd followed feelings for her childhood best friend.\",\n        \"created_at\": \"2022-01-22T19:10:14.768Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.768Z\"\n    },\n    {\n        \"id\": \"3da721fc-6d8b-4d1a-9b1f-488a4cc5cb6c\",\n        \"show_id\": \"s7021\",\n        \"type\": \"TV Show\",\n        \"title\": \"The Worst Witch\",\n        \"director\": null,\n        \"cast\": \"Bella Ramsey, Clare Higgins, Meibh Campbell, Raquel Cassidy, Jenny Richardson, Miriam Petche, Tallulah Milligan, Wendy Craig, Shauna Shim\",\n        \"country\": \"United Kingdom, Germany\",\n        \"date_added\": \"October 1, 2020\",\n        \"release_year\": \"2020\",\n        \"rating\": \"TV-G\",\n        \"duration\": \"4 Seasons\",\n        \"listed_in\": \"British TV Shows, Kids' TV\",\n        \"description\": \"After stumbling into a school for witches, a bumbling heroine comes to realize that she just might belong there. Based on Jill Murphy's beloved books.\",\n        \"created_at\": \"2022-01-22T19:10:14.868Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.868Z\"\n    },\n    {\n        \"id\": \"40b3deb0-65f9-40d6-9ef1-a7e6265ee188\",\n        \"show_id\": \"s148\",\n        \"type\": \"Movie\",\n        \"title\": \"A Babysitter's Guide to Monster Hunting\",\n        \"director\": \"Rachel Talalay\",\n        \"cast\": \"Tamara Smart, Oona Laurence, Tom Felton, Troy Leigh-Anne Johnson, Lynn Masako Cheng, Ty Consiglio, Ian Ho, Indya Moore, Alessio Scalzotto, Tamsen McDonough\",\n        \"country\": \"United States\",\n        \"date_added\": \"October 15, 2020\",\n        \"release_year\": \"2020\",\n        \"rating\": \"TV-PG\",\n        \"duration\": \"99 min\",\n        \"listed_in\": \"Children & Family Movies\",\n        \"description\": \"Recruited by a secret society of babysitters, a high schooler battles the Boogeyman and his monsters when they nab the boy she's watching on Halloween.\",\n        \"created_at\": \"2022-01-22T19:10:14.600Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.600Z\"\n    },\n    {\n        \"id\": \"5610a221-c56a-4212-87b7-40b82d67e988\",\n        \"show_id\": \"s7014\",\n        \"type\": \"TV Show\",\n        \"title\": \"The Woods\",\n        \"director\": null,\n        \"cast\": \"Grzegorz Damięcki, Agnieszka Grochowska, Hubert Miłkowski, Wiktoria Filus, Jacek Koman, Krzysztof Zarzecki, Ewa Skibińska, Martyna Byczkowska, Roman Gancarczyk, Adam Wietrzyński\",\n        \"country\": \"Poland, United States\",\n        \"date_added\": \"June 12, 2020\",\n        \"release_year\": \"2020\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"1 Season\",\n        \"listed_in\": \"Crime TV Shows, International TV Shows, TV Dramas\",\n        \"description\": \"Evidence found on the body of a homicide victim sparks hope in a prosecutor that his sister who disappeared 25 years earlier could still be alive.\",\n        \"created_at\": \"2022-01-22T19:10:14.822Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.822Z\"\n    },\n    {\n        \"id\": \"6f2ba5dc-d50a-4229-a94d-38787758e2e1\",\n        \"show_id\": \"s107\",\n        \"type\": \"Movie\",\n        \"title\": \"365 Days\",\n        \"director\": \"Barbara Białowąs, Tomasz Mandes\",\n        \"cast\": \"Anna-Maria Sieklucka, Michele Morrone, Bronisław Wrocławski, Otar Saralidze, Magdalena Lamparska, Natasza Urbańska, Grażyna Szapołowska, Tomasz Stockinger, Gianni Parisi, Mateusz Łasowski\",\n        \"country\": \"Poland\",\n        \"date_added\": \"June 7, 2020\",\n        \"release_year\": \"2020\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"114 min\",\n        \"listed_in\": \"Dramas, International Movies, Romantic Movies\",\n        \"description\": \"A fiery executive in a spiritless relationship falls victim to a dominant mafia boss, who imprisons her and gives her one year to fall in love with him.\",\n        \"created_at\": \"2022-01-22T19:10:14.313Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.313Z\"\n    },\n    {\n        \"id\": \"c8c2ba70-3194-4cc7-842f-85645977b9f9\",\n        \"show_id\": \"s169\",\n        \"type\": \"Movie\",\n        \"title\": \"A Fall from Grace\",\n        \"director\": \"Tyler Perry\",\n        \"cast\": \"Crystal Fox, Phylicia Rashad, Cicely Tyson, Bresha Webb, Mehcad Brooks, Adrian Pasdar, Tyler Perry\",\n        \"country\": \"United States\",\n        \"date_added\": \"January 17, 2020\",\n        \"release_year\": \"2020\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"121 min\",\n        \"listed_in\": \"Dramas, Thrillers\",\n        \"description\": \"When gentle, law-abiding Grace confesses to killing her new husband, her skeptical young lawyer sets out to uncover the truth. A film by Tyler Perry.\",\n        \"created_at\": \"2022-01-22T19:10:14.680Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.680Z\"\n    },\n    {\n        \"id\": \"f036950e-75da-4f16-9d7f-d84735eaa1ba\",\n        \"show_id\": \"s142\",\n        \"type\": \"TV Show\",\n        \"title\": \"7SEEDS\",\n        \"director\": null,\n        \"cast\": \"Nao Toyama, Jun Fukuyama, Katsuyuki Konishi, Yoko Soumi, Kana Asumi, Akira Ishida, Aoi Yuki, Kazuhiko Inoue, Yoko Hikasa, Hirofumi Nojima, Ryotaro Okiayu, Eri Kitamura, Mamiko Noto, Ryo Hirohashi, Shizuka Ito, Hisao Egawa, Mayumi Asano, Kenta Miyake, Ai Kakuma, Kaito Ishikawa, Mikako Komatsu, Daisuke Sakaguchi, Takanori Hoshino, Kenjiro Tsuda, Nozomu Sasaki, Kenji Nojima, Houko Kuwashima, Kensho Ono, Takahiro Sakurai, Haruka Chisuga, Yu Shimamura, Takuma Terashima, Takuya Sato, Junko Minagawa, Masashi Sugawara, Sho Hayami, Kazuyuki Okitsu, Minako Kotobuki\",\n        \"country\": null,\n        \"date_added\": \"March 26, 2020\",\n        \"release_year\": \"2020\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"2 Seasons\",\n        \"listed_in\": \"Anime Series, International TV Shows\",\n        \"description\": \"Shy Natsu awakens as part of a group chosen to ensure the survival of humanity. Together, they have to survive on a changed Earth.\",\n        \"created_at\": \"2022-01-22T19:10:14.557Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.557Z\"\n    },\n    {\n        \"id\": \"f64f93fa-684a-474f-bec2-bb51a8a3d9d7\",\n        \"show_id\": \"s74\",\n        \"type\": \"Movie\",\n        \"title\": \"18 Presents\",\n        \"director\": \"Francesco Amato\",\n        \"cast\": \"Vittoria Puccini, Benedetta Porcaroli, Edoardo Leo, Sara Lazzaro, Marco Messeri, Betty Pedrazzi, Alessandro Giallocosta, Filippo Gili, Giacomo Rosselli\",\n        \"country\": \"Italy\",\n        \"date_added\": \"May 8, 2020\",\n        \"release_year\": \"2020\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"114 min\",\n        \"listed_in\": \"Dramas, Independent Movies, International Movies\",\n        \"description\": \"A pregnant mother with terminal cancer leaves behind 18 sentimental gifts for her unborn daughter to receive every birthday until she reaches womanhood.\",\n        \"created_at\": \"2022-01-22T19:10:14.058Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.058Z\"\n    }\n]"
+				},
+				{
+					"name": "http://localhost:3000/netflixes?page=&search=movie",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/netflixes?page=1&search=movie",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"netflixes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "search",
+									"value": "movie",
+									"description": "Buscar por tipo"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Link",
+							"value": "<http://localhost:3000/netflixes?page=7&search=movie>; rel=\"last\", <http://localhost:3000/netflixes?page=2&search=movie>; rel=\"next\""
+						},
+						{
+							"key": "Per-Page",
+							"value": "15"
+						},
+						{
+							"key": "Total",
+							"value": "105"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e3cf065016cf9ddba25176c9236859a7\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "6410b282-654e-4657-9672-3d6126ab7418"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.018318"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"015da923-905e-4d30-ba8f-71da06e533b2\",\n        \"show_id\": \"s67\",\n        \"type\": \"Movie\",\n        \"title\": \"13TH\",\n        \"director\": \"Ava DuVernay\",\n        \"cast\": null,\n        \"country\": \"United States\",\n        \"date_added\": \"October 7, 2016\",\n        \"release_year\": \"2016\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"101 min\",\n        \"listed_in\": \"Documentaries\",\n        \"description\": \"In this thought-provoking documentary, scholars, activists and politicians analyze the criminalization of African Americans and the U.S. prison boom.\",\n        \"created_at\": \"2022-01-22T19:10:14.005Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.005Z\"\n    },\n    {\n        \"id\": \"01957b95-5b31-4443-b884-9f8b94190060\",\n        \"show_id\": \"s70\",\n        \"type\": \"Movie\",\n        \"title\": \"14 Cameras\",\n        \"director\": \"Scott Hussion, Seth Fuller\",\n        \"cast\": \"Neville Archambault, Amber Midthunder, Brytnee Ratledge, Hank Rogerson, Chelsea Edmundson, John-Paul Howard, Lora Martinez-Cunningham, Brianne Moncrief\",\n        \"country\": \"United States\",\n        \"date_added\": \"October 27, 2018\",\n        \"release_year\": \"2018\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"89 min\",\n        \"listed_in\": \"Horror Movies, Thrillers\",\n        \"description\": \"Upping the “13 Cameras” ante, this sequel finds a family renting a vacation house that’s been customized to violate their privacy.\",\n        \"created_at\": \"2022-01-22T19:10:14.028Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.028Z\"\n    },\n    {\n        \"id\": \"029f9bb5-ee81-4692-b292-0db26bdde1ab\",\n        \"show_id\": \"s7015\",\n        \"type\": \"Movie\",\n        \"title\": \"The Workshop\",\n        \"director\": \"Laurent Cantet\",\n        \"cast\": \"Marina Foïs, Matthieu Lucci, Warda Rammach, Issam Talbi, Florian Beaujean, Mamadou Doumbia, Julien Souve, Mélissa Guilbert, Olivier Thouret, Lény Sellam\",\n        \"country\": \"France\",\n        \"date_added\": \"November 10, 2018\",\n        \"release_year\": \"2017\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"114 min\",\n        \"listed_in\": \"Dramas, International Movies\",\n        \"description\": \"In an old shipyard town in France, sociopolitical tensions beset a writing workshop where the instructor notices a student with a dark side.\",\n        \"created_at\": \"2022-01-22T19:10:14.828Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.828Z\"\n    },\n    {\n        \"id\": \"05697d75-e89c-4e13-abbb-e062712dce94\",\n        \"show_id\": \"s166\",\n        \"type\": \"Movie\",\n        \"title\": \"A Clockwork Orange\",\n        \"director\": \"Stanley Kubrick\",\n        \"cast\": \"Malcolm McDowell, Patrick Magee, Michael Bates, Warren Clarke, Adrienne Corri, Paul Farrell, Miriam Karlin, James Marcus\",\n        \"country\": \"United Kingdom, United States\",\n        \"date_added\": \"November 1, 2020\",\n        \"release_year\": \"1971\",\n        \"rating\": \"R\",\n        \"duration\": \"137 min\",\n        \"listed_in\": \"Classic Movies, Cult Movies, Dramas\",\n        \"description\": \"In this dark satire from director Stanley Kubrick, a young, vicious sociopath in a dystopian England undergoes an experimental rehabilitation therapy.\",\n        \"created_at\": \"2022-01-22T19:10:14.661Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.661Z\"\n    },\n    {\n        \"id\": \"079d0632-9d20-4d8a-90e6-2bd6a5c242d5\",\n        \"show_id\": \"s104\",\n        \"type\": \"Movie\",\n        \"title\": \"30 Days of Luxury\",\n        \"director\": \"Hani Hamdi\",\n        \"cast\": \"Taher Farouz, Sad Al-Saghir, Ahmad Faloks, Soleiman Eid, Mahmood El-Laithi, Hesham Ismail, Shaima Saif, Nermin Maher, Sofinar\",\n        \"country\": \"Egypt\",\n        \"date_added\": \"April 18, 2019\",\n        \"release_year\": \"2016\",\n        \"rating\": \"TV-14\",\n        \"duration\": \"91 min\",\n        \"listed_in\": \"Comedies, International Movies\",\n        \"description\": \"With the help of his friends, a man breaks out of prison in hopes of restoring a lively nightclub.\",\n        \"created_at\": \"2022-01-22T19:10:14.293Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.293Z\"\n    },\n    {\n        \"id\": \"0873c6bc-0344-43f4-aa68-d73e05912c48\",\n        \"show_id\": \"s164\",\n        \"type\": \"Movie\",\n        \"title\": \"A Cinderella Story\",\n        \"director\": \"Mark Rosman\",\n        \"cast\": \"Hilary Duff, Chad Michael Murray, Jennifer Coolidge, Dan Byrd, Regina King, Julie Gonzalo, Lin Shaye, Madeline Zima, Andrea Avery, Mary Pat Gleason, Paul Rodriguez, Whip Hubley, Kevin Kilner, Erica Hubbard, Simon Helberg\",\n        \"country\": \"United States, Canada\",\n        \"date_added\": \"January 1, 2020\",\n        \"release_year\": \"2004\",\n        \"rating\": \"PG\",\n        \"duration\": \"95 min\",\n        \"listed_in\": \"Children & Family Movies, Comedies\",\n        \"description\": \"Teen Sam meets the boy of her dreams at a dance before returning to toil in her stepmother's diner. Can her lost cell phone bring them together?\",\n        \"created_at\": \"2022-01-22T19:10:14.648Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.648Z\"\n    },\n    {\n        \"id\": \"09e946e0-b13b-44fb-a96d-f899e87589f2\",\n        \"show_id\": \"s71\",\n        \"type\": \"Movie\",\n        \"title\": \"14 Minutes from Earth\",\n        \"director\": \"Adam Davis, Jerry Kolber, Trey Nelson, Erich Sturm\",\n        \"cast\": null,\n        \"country\": \"United States\",\n        \"date_added\": \"February 1, 2019\",\n        \"release_year\": \"2016\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"84 min\",\n        \"listed_in\": \"Documentaries\",\n        \"description\": \"A Google executive boldly attempts a death-defying mission to travel to space and free-fall back to Earth without a rocket.\",\n        \"created_at\": \"2022-01-22T19:10:14.035Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.035Z\"\n    },\n    {\n        \"id\": \"1440ea99-3b83-45df-9b4e-cc0c88394490\",\n        \"show_id\": \"s174\",\n        \"type\": \"Movie\",\n        \"title\": \"A Fortunate Man\",\n        \"director\": \"Bille August\",\n        \"cast\": \"Esben Smed, Katrine Rosenthal, Benjamin Kitter, Julie Christiansen, Tommy Kenter, Tammi Øst, Rasmus Bjerg, Ole Lemmeke, Sarah Viktoria Bjerregaard, Anders Hove, Jens Albinus\",\n        \"country\": \"Denmark\",\n        \"date_added\": \"April 20, 2019\",\n        \"release_year\": \"2018\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"168 min\",\n        \"listed_in\": \"Dramas, International Movies\",\n        \"description\": \"A gifted engineer flees his austere roots to pursue wealth and success among Copenhagen's elite, but the pride propelling him threatens to be his ruin.\",\n        \"created_at\": \"2022-01-22T19:10:14.714Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.714Z\"\n    },\n    {\n        \"id\": \"194cfd60-7079-42d0-b077-3aacf42d2be3\",\n        \"show_id\": \"s95\",\n        \"type\": \"Movie\",\n        \"title\": \"28 Days\",\n        \"director\": \"Betty Thomas\",\n        \"cast\": \"Sandra Bullock, Viggo Mortensen, Dominic West, Diane Ladd, Elizabeth Perkins, Steve Buscemi, Alan Tudyk, Mike O'Malley, Azura Skye, Reni Santoni, Marianne Jean-Baptiste\",\n        \"country\": \"United States\",\n        \"date_added\": \"September 30, 2020\",\n        \"release_year\": \"2000\",\n        \"rating\": \"PG-13\",\n        \"duration\": \"104 min\",\n        \"listed_in\": \"Comedies, Dramas\",\n        \"description\": \"After her drunken antics result in property damage, an alcoholic journalist enters rehab – and soon meets a fellow resident who changes her outlook.\",\n        \"created_at\": \"2022-01-22T19:10:14.223Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.223Z\"\n    },\n    {\n        \"id\": \"1a348131-d5a0-4710-b71b-032b9a7e3ccb\",\n        \"show_id\": \"s171\",\n        \"type\": \"Movie\",\n        \"title\": \"A Family Man\",\n        \"director\": \"Mark Williams\",\n        \"cast\": \"Gerard Butler, Gretchen Mol, Alison Brie, Willem Dafoe, Alfred Molina, Maxwell Jenkins, Anupam Kher, Dustin Milligan\",\n        \"country\": \"Canada, United States\",\n        \"date_added\": \"December 15, 2019\",\n        \"release_year\": \"2016\",\n        \"rating\": \"R\",\n        \"duration\": \"110 min\",\n        \"listed_in\": \"Dramas\",\n        \"description\": \"A ruthless corporate headhunter battles his rival for a promotion while dealing with a family crisis that threatens to derail his career.\",\n        \"created_at\": \"2022-01-22T19:10:14.693Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.693Z\"\n    },\n    {\n        \"id\": \"1d9fae7c-2f78-4934-82de-0ab5a3d19bfd\",\n        \"show_id\": \"s108\",\n        \"type\": \"Movie\",\n        \"title\": \"37 Seconds\",\n        \"director\": \"Hikari\",\n        \"cast\": \"Mei Kayama, Misuzu Kanno, Shunsuke Daitoh, Makiko Watanabe, Yoshihiko Kumashino, Minori Hagiwara, Shohei Uno, Yuka Itaya, Kiyohiko Shibukawa, Eita Okuno, Haruka Imou, Toshinori Omi\",\n        \"country\": \"Japan\",\n        \"date_added\": \"January 31, 2020\",\n        \"release_year\": \"2020\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"116 min\",\n        \"listed_in\": \"Dramas, International Movies\",\n        \"description\": \"Trapped by society and familial obligations, a young manga artist goes on an unconventional journey for sexual freedom and personal liberation.\",\n        \"created_at\": \"2022-01-22T19:10:14.320Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.320Z\"\n    },\n    {\n        \"id\": \"1fc43129-0cac-4ca8-9256-fcd4a4ef665e\",\n        \"show_id\": \"s78\",\n        \"type\": \"Movie\",\n        \"title\": \"2 Alone in Paris\",\n        \"director\": \"Ramzy Bedia, Éric Judor\",\n        \"cast\": \"Ramzy Bedia, Éric Judor, Benoît Magimel, Kristin Scott Thomas, Élodie Bouchez, Édouard Baer, Fred Testot, Omar Sy\",\n        \"country\": \"France\",\n        \"date_added\": \"June 1, 2020\",\n        \"release_year\": \"2008\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"97 min\",\n        \"listed_in\": \"Comedies, International Movies\",\n        \"description\": \"A bumbling Paris policeman is doggedly determined to capture the master thief that repeatedly eludes him, even when they're the last two men on Earth.\",\n        \"created_at\": \"2022-01-22T19:10:14.092Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.092Z\"\n    },\n    {\n        \"id\": \"20187c74-b8ef-49b4-be02-d77c8188a229\",\n        \"show_id\": \"s149\",\n        \"type\": \"Movie\",\n        \"title\": \"A Bad Moms Christmas\",\n        \"director\": \"Jon Lucas, Scott Moore\",\n        \"cast\": \"Mila Kunis, Kristen Bell, Kathryn Hahn, Susan Sarandon, Christine Baranski, Jay Hernandez, Cheryl Hines, Peter Gallagher, Justin Hartley\",\n        \"country\": \"United States, China\",\n        \"date_added\": \"February 14, 2020\",\n        \"release_year\": \"2017\",\n        \"rating\": \"R\",\n        \"duration\": \"104 min\",\n        \"listed_in\": \"Comedies\",\n        \"description\": \"Stressed-out moms Amy, Carla and Kiki are back, and the looming Christmas holiday gets even more daunting when their mothers show up for a visit.\",\n        \"created_at\": \"2022-01-22T19:10:14.607Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.607Z\"\n    },\n    {\n        \"id\": \"23802411-66ac-4db4-bd1a-ec8d8932fc47\",\n        \"show_id\": \"s123\",\n        \"type\": \"Movie\",\n        \"title\": \"50/50\",\n        \"director\": \"Jonathan Levine\",\n        \"cast\": \"Joseph Gordon-Levitt, Seth Rogen, Anna Kendrick, Bryce Dallas Howard, Anjelica Huston, Serge Houde, Andrew Airlie, Matt Frewer, Philip Baker Hall, Marie Avgeropoulos, Jessica Parker Kennedy\",\n        \"country\": \"United States\",\n        \"date_added\": \"June 1, 2019\",\n        \"release_year\": \"2011\",\n        \"rating\": \"R\",\n        \"duration\": \"100 min\",\n        \"listed_in\": \"Comedies, Dramas, Independent Movies\",\n        \"description\": \"An otherwise healthy twentysomething has a comically early midlife crisis when he gets slapped with a cancer diagnosis and a 50-50 chance of survival.\",\n        \"created_at\": \"2022-01-22T19:10:14.420Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.420Z\"\n    },\n    {\n        \"id\": \"239a5a19-9ac3-4cc3-98f5-28d8dfb62f69\",\n        \"show_id\": \"s738\",\n        \"type\": \"Movie\",\n        \"title\": \"Barbie in A Mermaid Tale\",\n        \"director\": \"Adam Wood\",\n        \"cast\": \"Kelly Sheridan, Kathleen Barr, Tabitha St. Germain, Peter Mel, Nakia Burrise, Maryke Hendrikse, Emma Pierson, Ciara Janson, Garry Chalk, Nicole Oliver\",\n        \"country\": \"United States\",\n        \"date_added\": \"October 1, 2017\",\n        \"release_year\": \"2010\",\n        \"rating\": \"TV-Y\",\n        \"duration\": \"74 min\",\n        \"listed_in\": \"Children & Family Movies\",\n        \"description\": \"Surf champ Merliah discovers she's actually a mermaid in a girl's body. With the help of a dolphin, Merliah must rescue her mom, the Queen of Oceana.\",\n        \"created_at\": \"2022-01-22T19:10:14.775Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.775Z\"\n    }\n]"
+				},
+				{
+					"name": "http://localhost:3000/netflixes?page=&search=movie",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/netflixes?page=1&search=United states",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"netflixes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "search",
+									"value": "United states",
+									"description": "Buscar por país"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Link",
+							"value": "<http://localhost:3000/netflixes?page=4&search=United+states>; rel=\"last\", <http://localhost:3000/netflixes?page=2&search=United+states>; rel=\"next\""
+						},
+						{
+							"key": "Per-Page",
+							"value": "15"
+						},
+						{
+							"key": "Total",
+							"value": "59"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4d231bf405c622817650e95bae0157c9\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "793959db-040c-41e1-8681-31f7fe6745ed"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.018758"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"05697d75-e89c-4e13-abbb-e062712dce94\",\n        \"show_id\": \"s166\",\n        \"type\": \"Movie\",\n        \"title\": \"A Clockwork Orange\",\n        \"director\": \"Stanley Kubrick\",\n        \"cast\": \"Malcolm McDowell, Patrick Magee, Michael Bates, Warren Clarke, Adrienne Corri, Paul Farrell, Miriam Karlin, James Marcus\",\n        \"country\": \"United Kingdom, United States\",\n        \"date_added\": \"November 1, 2020\",\n        \"release_year\": \"1971\",\n        \"rating\": \"R\",\n        \"duration\": \"137 min\",\n        \"listed_in\": \"Classic Movies, Cult Movies, Dramas\",\n        \"description\": \"In this dark satire from director Stanley Kubrick, a young, vicious sociopath in a dystopian England undergoes an experimental rehabilitation therapy.\",\n        \"created_at\": \"2022-01-22T19:10:14.661Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.661Z\"\n    },\n    {\n        \"id\": \"eecb8434-c8ef-4d25-86f6-f2c85569db9a\",\n        \"show_id\": \"s7016\",\n        \"type\": \"Movie\",\n        \"title\": \"The World Is Not Enough\",\n        \"director\": \"Michael Apted\",\n        \"cast\": \"Pierce Brosnan, Sophie Marceau, Robert Carlyle, Denise Richards, Robbie Coltrane, Judi Dench, Desmond Llewelyn, John Cleese, Maria Grazia Cucinotta\",\n        \"country\": \"United Kingdom, United States\",\n        \"date_added\": \"December 31, 2019\",\n        \"release_year\": \"1999\",\n        \"rating\": \"PG-13\",\n        \"duration\": \"128 min\",\n        \"listed_in\": \"Action & Adventure\",\n        \"description\": \"Greed, revenge, world domination: It's all in a day's work for James Bond, who's on a mission to protect an oil heiress from a notorious terrorist.\",\n        \"created_at\": \"2022-01-22T19:10:14.835Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.835Z\"\n    },\n    {\n        \"id\": \"339baccb-9a4c-4ff9-9a6d-d8dc705ab753\",\n        \"show_id\": \"s206\",\n        \"type\": \"Movie\",\n        \"title\": \"A Monster Calls\",\n        \"director\": \"J.A. Bayona\",\n        \"cast\": \"Lewis MacDougall, Sigourney Weaver, Felicity Jones, Liam Neeson, Toby Kebbell, Ben Moor, James Melville, Oliver Steer, Dominic Boyle, Geraldine Chaplin, Jennifer Lim\",\n        \"country\": \"United Kingdom, Spain, United States\",\n        \"date_added\": \"January 16, 2021\",\n        \"release_year\": \"2016\",\n        \"rating\": \"PG-13\",\n        \"duration\": \"108 min\",\n        \"listed_in\": \"Dramas, Sci-Fi & Fantasy\",\n        \"description\": \"Overwhelmed by his mother’s illness, a young boy begins to understand human complexity through the fantastic tales of a consoling tree monster.\",\n        \"created_at\": \"2022-01-22T19:10:14.741Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.741Z\"\n    },\n    {\n        \"id\": \"8201bb47-16e9-4ce2-b507-7ce88575f65b\",\n        \"show_id\": \"s207\",\n        \"type\": \"Movie\",\n        \"title\": \"A Most Violent Year\",\n        \"director\": \"J.C. Chandor\",\n        \"cast\": \"Oscar Isaac, Jessica Chastain, David Oyelowo, Albert Brooks, Elyes Gabel, Catalina Sandino Moreno, Christopher Abbott, Peter Gerety, Alessandro Nivola\",\n        \"country\": \"United Arab Emirates, United States\",\n        \"date_added\": \"July 22, 2018\",\n        \"release_year\": \"2014\",\n        \"rating\": \"R\",\n        \"duration\": \"125 min\",\n        \"listed_in\": \"Dramas, Thrillers\",\n        \"description\": \"Abel Morales tries to avoid corruption's easy path as he pursues the American Dream amid an increasingly violent business war in 1981 New York City.\",\n        \"created_at\": \"2022-01-22T19:10:14.748Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.748Z\"\n    },\n    {\n        \"id\": \"015da923-905e-4d30-ba8f-71da06e533b2\",\n        \"show_id\": \"s67\",\n        \"type\": \"Movie\",\n        \"title\": \"13TH\",\n        \"director\": \"Ava DuVernay\",\n        \"cast\": null,\n        \"country\": \"United States\",\n        \"date_added\": \"October 7, 2016\",\n        \"release_year\": \"2016\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"101 min\",\n        \"listed_in\": \"Documentaries\",\n        \"description\": \"In this thought-provoking documentary, scholars, activists and politicians analyze the criminalization of African Americans and the U.S. prison boom.\",\n        \"created_at\": \"2022-01-22T19:10:14.005Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.005Z\"\n    },\n    {\n        \"id\": \"01957b95-5b31-4443-b884-9f8b94190060\",\n        \"show_id\": \"s70\",\n        \"type\": \"Movie\",\n        \"title\": \"14 Cameras\",\n        \"director\": \"Scott Hussion, Seth Fuller\",\n        \"cast\": \"Neville Archambault, Amber Midthunder, Brytnee Ratledge, Hank Rogerson, Chelsea Edmundson, John-Paul Howard, Lora Martinez-Cunningham, Brianne Moncrief\",\n        \"country\": \"United States\",\n        \"date_added\": \"October 27, 2018\",\n        \"release_year\": \"2018\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"89 min\",\n        \"listed_in\": \"Horror Movies, Thrillers\",\n        \"description\": \"Upping the “13 Cameras” ante, this sequel finds a family renting a vacation house that’s been customized to violate their privacy.\",\n        \"created_at\": \"2022-01-22T19:10:14.028Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.028Z\"\n    },\n    {\n        \"id\": \"0873c6bc-0344-43f4-aa68-d73e05912c48\",\n        \"show_id\": \"s164\",\n        \"type\": \"Movie\",\n        \"title\": \"A Cinderella Story\",\n        \"director\": \"Mark Rosman\",\n        \"cast\": \"Hilary Duff, Chad Michael Murray, Jennifer Coolidge, Dan Byrd, Regina King, Julie Gonzalo, Lin Shaye, Madeline Zima, Andrea Avery, Mary Pat Gleason, Paul Rodriguez, Whip Hubley, Kevin Kilner, Erica Hubbard, Simon Helberg\",\n        \"country\": \"United States, Canada\",\n        \"date_added\": \"January 1, 2020\",\n        \"release_year\": \"2004\",\n        \"rating\": \"PG\",\n        \"duration\": \"95 min\",\n        \"listed_in\": \"Children & Family Movies, Comedies\",\n        \"description\": \"Teen Sam meets the boy of her dreams at a dance before returning to toil in her stepmother's diner. Can her lost cell phone bring them together?\",\n        \"created_at\": \"2022-01-22T19:10:14.648Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.648Z\"\n    },\n    {\n        \"id\": \"09e946e0-b13b-44fb-a96d-f899e87589f2\",\n        \"show_id\": \"s71\",\n        \"type\": \"Movie\",\n        \"title\": \"14 Minutes from Earth\",\n        \"director\": \"Adam Davis, Jerry Kolber, Trey Nelson, Erich Sturm\",\n        \"cast\": null,\n        \"country\": \"United States\",\n        \"date_added\": \"February 1, 2019\",\n        \"release_year\": \"2016\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"84 min\",\n        \"listed_in\": \"Documentaries\",\n        \"description\": \"A Google executive boldly attempts a death-defying mission to travel to space and free-fall back to Earth without a rocket.\",\n        \"created_at\": \"2022-01-22T19:10:14.035Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.035Z\"\n    },\n    {\n        \"id\": \"194cfd60-7079-42d0-b077-3aacf42d2be3\",\n        \"show_id\": \"s95\",\n        \"type\": \"Movie\",\n        \"title\": \"28 Days\",\n        \"director\": \"Betty Thomas\",\n        \"cast\": \"Sandra Bullock, Viggo Mortensen, Dominic West, Diane Ladd, Elizabeth Perkins, Steve Buscemi, Alan Tudyk, Mike O'Malley, Azura Skye, Reni Santoni, Marianne Jean-Baptiste\",\n        \"country\": \"United States\",\n        \"date_added\": \"September 30, 2020\",\n        \"release_year\": \"2000\",\n        \"rating\": \"PG-13\",\n        \"duration\": \"104 min\",\n        \"listed_in\": \"Comedies, Dramas\",\n        \"description\": \"After her drunken antics result in property damage, an alcoholic journalist enters rehab – and soon meets a fellow resident who changes her outlook.\",\n        \"created_at\": \"2022-01-22T19:10:14.223Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.223Z\"\n    },\n    {\n        \"id\": \"1a348131-d5a0-4710-b71b-032b9a7e3ccb\",\n        \"show_id\": \"s171\",\n        \"type\": \"Movie\",\n        \"title\": \"A Family Man\",\n        \"director\": \"Mark Williams\",\n        \"cast\": \"Gerard Butler, Gretchen Mol, Alison Brie, Willem Dafoe, Alfred Molina, Maxwell Jenkins, Anupam Kher, Dustin Milligan\",\n        \"country\": \"Canada, United States\",\n        \"date_added\": \"December 15, 2019\",\n        \"release_year\": \"2016\",\n        \"rating\": \"R\",\n        \"duration\": \"110 min\",\n        \"listed_in\": \"Dramas\",\n        \"description\": \"A ruthless corporate headhunter battles his rival for a promotion while dealing with a family crisis that threatens to derail his career.\",\n        \"created_at\": \"2022-01-22T19:10:14.693Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.693Z\"\n    },\n    {\n        \"id\": \"20187c74-b8ef-49b4-be02-d77c8188a229\",\n        \"show_id\": \"s149\",\n        \"type\": \"Movie\",\n        \"title\": \"A Bad Moms Christmas\",\n        \"director\": \"Jon Lucas, Scott Moore\",\n        \"cast\": \"Mila Kunis, Kristen Bell, Kathryn Hahn, Susan Sarandon, Christine Baranski, Jay Hernandez, Cheryl Hines, Peter Gallagher, Justin Hartley\",\n        \"country\": \"United States, China\",\n        \"date_added\": \"February 14, 2020\",\n        \"release_year\": \"2017\",\n        \"rating\": \"R\",\n        \"duration\": \"104 min\",\n        \"listed_in\": \"Comedies\",\n        \"description\": \"Stressed-out moms Amy, Carla and Kiki are back, and the looming Christmas holiday gets even more daunting when their mothers show up for a visit.\",\n        \"created_at\": \"2022-01-22T19:10:14.607Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.607Z\"\n    },\n    {\n        \"id\": \"23802411-66ac-4db4-bd1a-ec8d8932fc47\",\n        \"show_id\": \"s123\",\n        \"type\": \"Movie\",\n        \"title\": \"50/50\",\n        \"director\": \"Jonathan Levine\",\n        \"cast\": \"Joseph Gordon-Levitt, Seth Rogen, Anna Kendrick, Bryce Dallas Howard, Anjelica Huston, Serge Houde, Andrew Airlie, Matt Frewer, Philip Baker Hall, Marie Avgeropoulos, Jessica Parker Kennedy\",\n        \"country\": \"United States\",\n        \"date_added\": \"June 1, 2019\",\n        \"release_year\": \"2011\",\n        \"rating\": \"R\",\n        \"duration\": \"100 min\",\n        \"listed_in\": \"Comedies, Dramas, Independent Movies\",\n        \"description\": \"An otherwise healthy twentysomething has a comically early midlife crisis when he gets slapped with a cancer diagnosis and a 50-50 chance of survival.\",\n        \"created_at\": \"2022-01-22T19:10:14.420Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.420Z\"\n    },\n    {\n        \"id\": \"239a5a19-9ac3-4cc3-98f5-28d8dfb62f69\",\n        \"show_id\": \"s738\",\n        \"type\": \"Movie\",\n        \"title\": \"Barbie in A Mermaid Tale\",\n        \"director\": \"Adam Wood\",\n        \"cast\": \"Kelly Sheridan, Kathleen Barr, Tabitha St. Germain, Peter Mel, Nakia Burrise, Maryke Hendrikse, Emma Pierson, Ciara Janson, Garry Chalk, Nicole Oliver\",\n        \"country\": \"United States\",\n        \"date_added\": \"October 1, 2017\",\n        \"release_year\": \"2010\",\n        \"rating\": \"TV-Y\",\n        \"duration\": \"74 min\",\n        \"listed_in\": \"Children & Family Movies\",\n        \"description\": \"Surf champ Merliah discovers she's actually a mermaid in a girl's body. With the help of a dolphin, Merliah must rescue her mom, the Queen of Oceana.\",\n        \"created_at\": \"2022-01-22T19:10:14.775Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.775Z\"\n    },\n    {\n        \"id\": \"264d9d36-0cae-433d-af09-75b3257e2946\",\n        \"show_id\": \"s7025\",\n        \"type\": \"Movie\",\n        \"title\": \"The Wrong Missy\",\n        \"director\": \"Tyler Spindel\",\n        \"cast\": \"David Spade, Lauren Lapkus, Nick Swardson, Geoff Pierson, Jackie Sandler, Sarah Chalke, Rob Schneider, Chris Witaske, Joe Anoa'i, Molly Sims\",\n        \"country\": \"United States\",\n        \"date_added\": \"May 13, 2020\",\n        \"release_year\": \"2020\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"90 min\",\n        \"listed_in\": \"Comedies, Romantic Movies\",\n        \"description\": \"Tim thinks he's invited the woman of his dreams on a work retreat to Hawaii, realizing too late he mistakenly texted someone from a nightmare blind date.\",\n        \"created_at\": \"2022-01-22T19:10:14.897Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.897Z\"\n    },\n    {\n        \"id\": \"272840df-78ab-4ffb-a8d3-c657f7abd410\",\n        \"show_id\": \"s210\",\n        \"type\": \"Movie\",\n        \"title\": \"A New York Christmas Wedding\",\n        \"director\": \"Otoja Abit\",\n        \"cast\": \"Nia Fairweather, Chris Noth, Cooper Koch, Tyra Ferrell, Denny Dillon, Adriana DeMeo, Otoja Abit, David Anzuelo, Camilla Harden, Natasha Goodman, Avery Whitted, Tony D. Head, Joe Perrino\",\n        \"country\": \"United States\",\n        \"date_added\": \"November 5, 2020\",\n        \"release_year\": \"2020\",\n        \"rating\": \"TV-MA\",\n        \"duration\": \"90 min\",\n        \"listed_in\": \"Dramas, LGBTQ Movies, Romantic Movies\",\n        \"description\": \"As her wedding nears, a bride-to-be is visited by an angel who reveals what could have been if she'd followed feelings for her childhood best friend.\",\n        \"created_at\": \"2022-01-22T19:10:14.768Z\",\n        \"updated_at\": \"2022-01-22T19:10:14.768Z\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
