@@ -8,7 +8,8 @@ class NetflixesController < ApplicationController
     else
       @netflixes = Netflix.sorted.page(params[:page])
     end
-    paginate json: @netflixes
+
+    paginate json: @netflixes, only: [:id, :title, :type, :release_year, :country, :date_added, :description]
   end
 
   private
