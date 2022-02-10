@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-
-  get '/netflixes', to: 'netflixes#listing'
-  
+  namespace 'api' do
+    namespace 'v1' do
+      get '/netflixes', to: 'netflixes#listing'
+    end
+  end
 end
