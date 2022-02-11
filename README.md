@@ -8,9 +8,9 @@
 
 ## Funcionalidades
 
-- Ler arquivo .csv, popular DB e mostra os registros em json.
+- Ler arquivo .csv, popular DB, versionar api e mostra os registros em json.
 
-![ScreenShot](https://github.com/beto-machado/api-mobile2you/blob/master/Captura%20de%20tela%202022-01-24%20170132.png)
+![ScreenShot](https://github.com/beto-machado/API-NETFLIX/blob/master/Captura%20de%20tela%202022-02-11%20134033.png)
 
 
 ## Para executar o projeto:
